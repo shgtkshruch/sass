@@ -1,0 +1,25 @@
+@mixin hide-text {
+  font: #{0 / 0} a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+// http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
+@mixin text-replace {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@mixin img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

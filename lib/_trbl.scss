@@ -3,12 +3,13 @@
 // @param $width {Number} 数値
 // @param $height {Number} 数値
 
-=trbl($width: null, $height: null)
-	position: absolute
-	top: 0
-	bottom: 0
-	left: 0
-	right: 0
-	width: $width
-	height: $height
-	margin: auto
+@mixin trbl($width: null, $height: null) {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: $width;
+  height: $height;
+  margin: auto;
+}
