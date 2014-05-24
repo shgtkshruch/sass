@@ -1,0 +1,14 @@
+@function oppsite-position($direction) {
+  @if $direction == top {
+    @return bottom;
+  }
+  @if $direction == bottom {
+    @return top;
+  }
+  @if $direction == right {
+    @return left;
+  }
+  @if $direction == left {
+    @return right;
+  }
+}
