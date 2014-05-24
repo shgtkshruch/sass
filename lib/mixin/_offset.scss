@@ -7,6 +7,8 @@
 // @param [list] $args (()): offsets list
 // ---
 
+@import '../function/is-vaild-length';
+
 @mixin position($position, $args: ()) {
   $offsets: top right bottom left;
   position: $position;
@@ -32,17 +34,6 @@
       }
     }
   }
-}
-
-// Function checking if $value is a valid length
-// ---
-// @param [literal] $value: value to test
-// ---
-// @return [bool]
-
-@function is-vaild-length($value) {
-  @return (type-of($value) == "number" and not unitless($value))
-          or (index(auto initial inherit 0, $value) != false);
 }
 
 // Shorthands

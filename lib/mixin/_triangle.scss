@@ -1,6 +1,15 @@
+// Arrow helper mixin
+// About: http://www.sitepoint.com/sass-mixin-css-triangles/
+// ---
+// @param [string] $direction: arrow direction
+// @param [list] $position: list of offsets and values
+// @param [color] $color (inherit): arrow color
+// @param [number] $size (1em): arrow size
+// ---
+
 @import 'size';
 @import 'offset';
-@import 'oppsite-position'
+@import '../function/oppsite-position';
 
 @mixin triangle($direction, $position, $color: currentColor, $size: 1em) {
   @if not index(top right bottom left, $direction) {
@@ -8,7 +17,7 @@
   }
 
   @else {
-    @include absolute($postion);
+    @include absolute($position);
     @include size(0);
     content: '';
     z-index: 2;
