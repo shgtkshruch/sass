@@ -1,16 +1,6 @@
-// import mixin
+// import my sass library
 @import '../import';
 
 // import test
-@import 'mixin/rem';
-@import 'mixin/break-point';
-@import 'mixin/center-block';
-@import 'mixin/hide-text';
-@import 'mixin/img-responsive';
-@import 'mixin/link-underline';
-@import 'mixin/offset';
-@import 'mixin/size';
-@import 'mixin/text-replace';
-@import 'mixin/trbl';
-@import 'mixin/triangle';
-
+@import 'utility/test';
+@import 'mixin/test';

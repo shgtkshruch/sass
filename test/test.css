@@ -1,3 +1,43 @@
+.foo {
+  margin-top: 5px;
+}
+
+.baz {
+  margin-right: 10px;
+}
+
+.foo {
+  padding-bottom: 50px;
+}
+
+.baz {
+  padding-left: 100px;
+}
+
+.foo {
+  height: 5px;
+}
+
+.baz {
+  height: 10px;
+}
+
+.foo {
+  width: 50px;
+}
+
+.baz {
+  width: 100px;
+}
+
+.foo {
+  float: left;
+}
+
+.baz {
+  float: right;
+}
+
 /* rem */
 .foo {
   font-size: 20px;
