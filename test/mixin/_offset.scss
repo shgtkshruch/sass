@@ -1,0 +1,13 @@
+/* offset */
+
+.foo {
+  @include relative(top 30px left 10px);
+}
+
+.baz {
+  @include absolute(top right bottom left);
+}
+
+.bar {
+  @include fixed(bottom 10px right 20%);
+}

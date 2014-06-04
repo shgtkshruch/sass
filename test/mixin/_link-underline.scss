@@ -1,0 +1,21 @@
+/* link underline */
+
+/* none */
+.foo {
+  @include link-underline(none);
+}
+
+/* line */
+.bar {
+  @include link-underline(line, important);
+}
+
+/* line to none */
+.baz {
+  @include link-underline(line-to-none, true);
+}
+
+/* none to line */
+.hoge {
+  @include link-underline(none-to-line, false);
+}

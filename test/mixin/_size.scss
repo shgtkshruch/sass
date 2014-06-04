@@ -1,0 +1,9 @@
+/* size */
+
+.foo {
+  @include size(30px);
+}
+
+.bar {
+  @include size(50px, 100px);
+}

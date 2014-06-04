@@ -1,0 +1,9 @@
+/* rem */
+
+.foo {
+  @include rem('font-size', 20px);
+}
+
+.bar {
+  @include rem('padding', 10px 0 10px 15px);
+}

@@ -1,0 +1,153 @@
+/* rem */
+.foo {
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+.bar {
+  padding: 10px 0 10px 15px;
+  padding: 0.625rem 0 0.625rem 0.9375rem;
+}
+
+/* break-point */
+.foo {
+  font-size: 16px;
+}
+@media only screen and (max-width: 480px) {
+  .foo {
+    font-size: 20px;
+  }
+}
+
+/* center-block */
+.foo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* hide text */
+.foo {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+/* image responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* link underline */
+/* none */
+.foo:link, .foo:visited, .foo:hover, .foo:active, .foo:focus {
+  text-decoration: none;
+}
+
+/* line */
+.bar:link, .bar:visited, .bar:hover, .bar:active, .bar:focus {
+  text-decoration: underline !important;
+}
+
+/* line to none */
+.baz:link, .baz:visited {
+  text-decoration: underline !important;
+}
+.baz:hover, .baz:active, .baz:focus {
+  text-decoration: none !important;
+}
+
+/* none to line */
+.hoge:link, .hoge:visited {
+  text-decoration: none;
+}
+.hoge:hover, .hoge:active, .hoge:focus {
+  text-decoration: underline;
+}
+
+/* offset */
+.foo {
+  position: relative;
+  top: 30px;
+  left: 10px;
+}
+
+.baz {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.bar {
+  position: fixed;
+  right: 20%;
+  bottom: 10px;
+}
+
+/* size */
+.foo {
+  width: 30px;
+  height: 30px;
+}
+
+.bar {
+  width: 50px;
+  height: 100px;
+}
+
+/* text replace */
+.foo {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* trbl */
+.foo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 50px;
+  margin: auto;
+}
+
+.baz {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 50px;
+  height: 100px;
+  margin: auto;
+}
+
+/* triangle */
+.foo:before {
+  position: absolute;
+  top: 100%;
+  left: 1em;
+  width: 0;
+  height: 0;
+  content: '';
+  z-index: 2;
+  border-top: 1.5em solid #3498db;
+  border-left: 1em solid transparent;
+  border-right: 1em solid transparent;
+}

@@ -1,0 +1,13 @@
+/* trbl */
+
+.foo {
+  @include trbl;
+}
+
+.bar {
+  @include trbl(50px);
+}
+
+.baz {
+  @include trbl(50px, 100px);
+}

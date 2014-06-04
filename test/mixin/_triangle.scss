@@ -1,0 +1,11 @@
+/* triangle */
+
+.foo {
+  &:before {
+    @include triangle(
+      $direction : bottom, 
+      $position  : top 100% left 1em, 
+      $color     : #3498db
+    );
+  }
+}
