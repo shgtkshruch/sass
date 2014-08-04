@@ -1,21 +1,21 @@
 @mixin bp($point) {
   @if $point == "phone" {
-    @media only screen and (max-width: #{$screen-phone}) {
+    @media only screen and (min-width: #{$screen-phone}) {
       @content;
     }
   }
   @else if $point == "tablet" {
-    @media only screen and (max-width: #{$screen-tablet}) {
+    @media only screen and (min-width: #{$screen-tablet}) {
       @content;
     }
   }
   @else if $point == "desktop" {
-    @media only screen and (max-width: #{$screen-desktop}) {
+    @media only screen and (min-width: #{$screen-desktop}) {
       @content;
     }
   }
   @else if $point == "large-desktop" {
-    @media only screen and (max-width: #{$screen-large-desktop}) {
+    @media only screen and (min-width: #{$screen-large-desktop}) {
       @content;
     }
   }
